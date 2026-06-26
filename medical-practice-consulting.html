@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Medical Practice Consulting | SheVada Solutions</title>
-<meta name="description" content="SheVada Solutions delivers RN-led operations consulting for medical practices — patient intake systems, prior authorization management, clinical SOP development, and workflow optimization for independent practices, multi-provider groups, and specialty clinics."/>
+<meta name="description" content="SheVada Solutions delivers RN-led operations consulting for medical practices — patient intake systems, prior authorization (PA) and utilization management management, clinical SOP development, and workflow optimization for independent practices, multi-provider groups, and specialty clinics."/>
 <meta name="keywords" content="medical practice consulting, medical practice operations, practice management consulting, patient intake system, prior authorization workflow, clinical SOP development, medical workflow optimization, healthcare operations consultant"/>
 <meta property="og:title" content="Medical Practice Consulting | SheVada Solutions"/>
 <meta property="og:description" content="SheVada Solutions delivers RN-led operations consulting for medical practices — patient intake systems, prior authorization management, clinical SOP development, and workflow optimization for independent practices, multi-provider groups, and specialty clinics."/>
@@ -16,7 +16,7 @@
 :root{--charcoal:#1a1a1a;--cm:#232323;--cl:#2c2c2c;--copper:#b87333;--clt:#d4935a;--gold:#c9a84c;--glt:#e2c36e;--ivory:#f5f0e8;--idim:#cfc8b6;--ok:#4caf7d;--err:#e05c5c}
 html{scroll-behavior:smooth}
 body{background:var(--charcoal);color:var(--ivory);font-family:'Montserrat',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:.9rem 5%;background:rgba(22,22,22,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,115,51,.18)}
+nav{position:fixed;top:28px;left:0;right:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:.9rem 5%;background:rgba(22,22,22,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,115,51,.18)}
 .nav-logo{text-decoration:none;flex-shrink:0}
 .nav-logo-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;letter-spacing:.05em;color:var(--ivory)}
 .nav-logo-name span{color:var(--gold)}
@@ -33,7 +33,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:cen
 .btn-gold:hover{background:var(--glt)}
 .btn-out{display:inline-block;font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,168,76,.35);padding:.8rem 1.85rem;text-decoration:none;background:transparent;cursor:pointer;transition:all .2s}
 .btn-out:hover{border-color:var(--gold);color:var(--glt)}
-.page-hero{padding:9rem 5% 5rem;background:var(--charcoal);position:relative;overflow:hidden;border-bottom:1px solid rgba(184,115,51,.14)}
+.page-hero{padding:11rem 5% 5rem;background:var(--charcoal);position:relative;overflow:hidden;border-bottom:1px solid rgba(184,115,51,.14)}
 .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(184,115,51,.07) 0%,transparent 65%);pointer-events:none}
 .page-eyebrow{font-size:.6rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--copper);margin-bottom:.9rem}
 .page-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:300;line-height:1.1;color:var(--ivory);margin-bottom:.75rem}
@@ -135,10 +135,18 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
 </style>
 </head>
 <body>
+<!-- TOP INFO BAR -->
+<div style="background:#111;border-bottom:1px solid rgba(184,115,51,.12);padding:.38rem 5%;display:flex;align-items:center;justify-content:space-between;font-size:.58rem;font-weight:500;letter-spacing:.06em;position:fixed;top:0;left:0;right:0;z-index:301">
+  <div style="color:var(--idim)">Founded in Twin Cities, MN &nbsp;&#8901;&nbsp; Serving Organizations Nationwide</div>
+  <div style="display:flex;align-items:center;gap:1.2rem">
+    <a href="mailto:info@shevada-solutions.com" style="color:var(--idim);text-decoration:none">&#9993; info@shevada-solutions.com</a>
+    <a href="tel:+16514250875" style="color:var(--copper);text-decoration:none;font-weight:600">&#128222; (651) 425-0875</a>
+  </div>
+</div>
 <nav>
   <a href="index.html" class="nav-logo">
     <div class="nav-logo-name">SheVada <span>Solutions</span></div>
-    <div class="nav-logo-tag">Healthcare Operations &amp; Systems Consulting</div>
+    <div class="nav-logo-tag">RN-Led Operations &amp; Executive Administrative Consulting</div>
   </a>
   <ul class="nav-links">
     <li><a href="index.html" >Home</a></li>
@@ -165,6 +173,7 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
   <div class="tbar-item"><span class="tbar-ck">&#10003;</span> Healthcare Operations Expertise</div>
   <div class="tbar-item"><span class="tbar-ck">&#10003;</span> SOP Development</div>
   <div class="tbar-item"><span class="tbar-ck">&#10003;</span> Workflow Optimization</div>
+  <div class="tbar-item"><span class="tbar-ck">&#10003;</span> HIPAA-Compliant Systems</div>
   <div class="tbar-item"><span class="tbar-ck">&#10003;</span> Nationwide Support</div>
 </div></div>
 <div class="page-hero">
@@ -179,7 +188,7 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
     <div class="phc"><span class="phc-ico">&#10003;</span>Clinical and administrative SOPs developed by an active Registered Nurse</div>
     <div class="phc"><span class="phc-ico">&#10003;</span>Staff onboarding frameworks that reduce your training burden significantly</div>
     <div class="phc"><span class="phc-ico">&#10003;</span>RN-led triage support — clinical judgment embedded in your practice operations</div>
-    <div class="phc"><span class="phc-ico">&#10003;</span>Executive-level calendar, appointment, and correspondence management</div>
+    <div class="phc"><span class="phc-ico">&#10003;</span>Administrative Operations Management — calendar, appointments, correspondence, and coordination managed by a credentialed RN</div>
   </div>
   <div class="page-hero-ctas">
     <a href="https://calendly.com/shevada-solutions/15min" target="_blank" class="btn-gold">Book Your Complimentary 15-Minute Review</a>
@@ -211,8 +220,8 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
   </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(184,115,51,.1);margin-top:2px">
     <div style="background:var(--charcoal);padding:2rem 1.8rem;border-top:2px solid var(--copper)">
-      <p style="font-size:.56rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--copper);margin-bottom:.45rem">Clinical Triage Support</p>
-      <p style="font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:500;color:var(--ivory);margin-bottom:.65rem">RN-Led Triage Operations</p>
+      <p style="font-size:.56rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--copper);margin-bottom:.45rem">Clinical Operations &amp; Triage Support</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:500;color:var(--ivory);margin-bottom:.65rem">Clinical Operations &amp; Triage Support</p>
       <p style="font-size:.79rem;color:var(--idim);line-height:1.72;margin-bottom:.85rem">Active RN-led triage support embedded into your clinic operations. Clinical judgment and triage protocol expertise that a general administrative consultant simply cannot provide.</p>
       <ul style="list-style:none;display:flex;flex-direction:column;gap:.4rem">
         <li style="display:flex;align-items:flex-start;gap:.5rem;font-size:.74rem;color:var(--idim);line-height:1.5"><span style="color:var(--copper);font-size:.63rem;flex-shrink:0;margin-top:.1rem">→</span>Triage protocol development and documentation</li>
@@ -223,8 +232,8 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
       </ul>
     </div>
     <div style="background:var(--charcoal);padding:2rem 1.8rem;border-top:2px solid var(--gold)">
-      <p style="font-size:.56rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-bottom:.45rem">Practice Operations Management</p>
-      <p style="font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:500;color:var(--ivory);margin-bottom:.65rem">Executive-Level Practice Administration</p>
+      <p style="font-size:.56rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-bottom:.45rem">Administrative Operations Management</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:500;color:var(--ivory);margin-bottom:.65rem">Administrative Operations Management</p>
       <p style="font-size:.79rem;color:var(--idim);line-height:1.72;margin-bottom:.85rem">High-level administrative and operational management for physicians and practice owners &#8212; calendar, appointments, correspondence, and coordination managed by a credentialed RN, not a general assistant.</p>
       <ul style="list-style:none;display:flex;flex-direction:column;gap:.4rem">
         <li style="display:flex;align-items:flex-start;gap:.5rem;font-size:.74rem;color:var(--idim);line-height:1.5"><span style="color:var(--gold);font-size:.63rem;flex-shrink:0;margin-top:.1rem">→</span>Physician and provider calendar management</li>
@@ -276,7 +285,7 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
   <div class="faq-grid">
     <div class="faq-i"><p class="faq-q">Do you work with specialty practices?</p><p class="faq-a">Yes. We work with primary care, specialty, and multi-specialty practices. The core operational challenges — intake, prior authorization, documentation, onboarding, communication — are consistent across specialties, and we adapt our frameworks to the specific workflows of your practice type.</p></div>
     <div class="faq-i"><p class="faq-q">We use Epic / Athena / Cerner. Can you still help?</p><p class="faq-a">Yes. Our work focuses on the processes around your EMR — intake workflows, documentation standards, prior auth tracking, staff procedures — not the EMR itself. We have direct experience with Epic, Cerner, and Meditech environments.</p></div>
-    <div class="faq-i"><p class="faq-q">What is the difference between you and a practice management consultant?</p><p class="faq-a">We are an RN-led operations firm. That means the clinical insight embedded in our documentation, escalation protocols, and workflow design is grounded in direct nursing and healthcare experience — not a business-only framework applied to a clinical environment.</p></div>
+    <div class="faq-i"><p class="faq-q">What is the difference between you and a practice management consultant?</p><p class="faq-a">We are an RN-led operations firm. That means the clinical insight embedded in our documentation, escalation protocols including rapid response and code team notification pathways, and workflow design is grounded in direct nursing and healthcare experience — not a business-only framework applied to a clinical environment.</p></div>
     <div class="faq-i"><p class="faq-q">Can you help with HIPAA-compliant workflow documentation?</p><p class="faq-a">Yes. HIPAA awareness is embedded in how we design every workflow and documentation standard. We build systems that support compliance rather than create risk.</p></div>
   </div>
 </section>
@@ -322,8 +331,17 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
   </ul>
   <div class="ft-r">
     <a href="https://www.linkedin.com/in/shevada-tools" target="_blank" class="ft-li">&#128100; LinkedIn &#8599;</a>
-    <div style="font-size:.61rem;color:var(--idim);margin-bottom:.26rem"><a href="mailto:shevada@shevada-solutions.com" style="color:var(--copper);text-decoration:none">shevada@shevada-solutions.com</a></div>
-    <div class="ft-copy">&#169; 2025 SheVada Solutions LLC &#8901; All rights reserved</div>
+    <div style="font-size:.61rem;color:var(--idim);margin-bottom:.26rem"><a href="mailto:info@shevada-solutions.com" style="color:var(--copper);text-decoration:none">info@shevada-solutions.com</a></div>
+    <div style="font-size:.61rem;color:var(--copper);font-weight:600;margin-bottom:.3rem"><a href="tel:+16514250875" style="color:var(--copper);text-decoration:none">&#128222; (651) 425-0875</a></div>
+  <div class="ft-copy">&#169; 2025 SheVada Solutions LLC &#8901; All rights reserved</div>
+    <div style="font-size:.52rem;color:rgba(217,208,188,.2);margin-top:.5rem;max-width:600px;line-height:1.6">SheVada Solutions LLC provides operational and systems consulting services. We are not a covered entity under HIPAA and do not provide legal, medical, or compliance advice. All clinical triage support is provided by licensed RN personnel. Organizations are responsible for their own regulatory compliance.</div>
   </div>
 </footer>
+<!-- FLOATING MOBILE BUTTONS -->
+<div style="display:none;position:fixed;bottom:1.2rem;left:0;right:0;z-index:498;padding:0 1rem;gap:.6rem;justify-content:center" class="mob-float-bar">
+  <a href="tel:+16514250875" style="flex:1;max-width:160px;background:var(--copper);color:var(--charcoal);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.7rem .5rem;text-align:center;text-decoration:none">&#128222; Call Now</a>
+  <a href="https://calendly.com/shevada-solutions/15min" target="_blank" style="flex:1;max-width:200px;background:var(--gold);color:var(--charcoal);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.7rem .5rem;text-align:center;text-decoration:none">Book Consultation</a>
+</div>
+<style>@media(max-width:768px){.mob-float-bar{display:flex!important}}</style>
+
 </body></html>
