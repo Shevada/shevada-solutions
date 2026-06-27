@@ -16,7 +16,7 @@
 :root{--charcoal:#1a1a1a;--cm:#232323;--cl:#2c2c2c;--copper:#b87333;--clt:#d4935a;--gold:#c9a84c;--glt:#e2c36e;--ivory:#f5f0e8;--idim:#cfc8b6;--ok:#4caf7d;--err:#e05c5c}
 html{scroll-behavior:smooth}
 body{background:var(--charcoal);color:var(--ivory);font-family:'Montserrat',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:.9rem 5%;background:rgba(22,22,22,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,115,51,.18)}
+nav{position:fixed;top:28px;left:0;right:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:.9rem 5%;background:rgba(22,22,22,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,115,51,.18)}
 .nav-logo{text-decoration:none;flex-shrink:0}
 .nav-logo-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;letter-spacing:.05em;color:var(--ivory)}
 .nav-logo-name span{color:var(--gold)}
@@ -33,7 +33,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:cen
 .btn-gold:hover{background:var(--glt)}
 .btn-out{display:inline-block;font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,168,76,.35);padding:.8rem 1.85rem;text-decoration:none;background:transparent;cursor:pointer;transition:all .2s}
 .btn-out:hover{border-color:var(--gold);color:var(--glt)}
-.page-hero{padding:9rem 5% 5rem;background:var(--charcoal);position:relative;overflow:hidden;border-bottom:1px solid rgba(184,115,51,.14)}
+.page-hero{padding:11rem 5% 5rem;background:var(--charcoal);position:relative;overflow:hidden;border-bottom:1px solid rgba(184,115,51,.14)}
 .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(184,115,51,.07) 0%,transparent 65%);pointer-events:none}
 .page-eyebrow{font-size:.6rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--copper);margin-bottom:.9rem}
 .page-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:300;line-height:1.1;color:var(--ivory);margin-bottom:.75rem}
@@ -135,10 +135,18 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
 </style>
 </head>
 <body>
+<!-- TOP INFO BAR -->
+<div style="background:#111;border-bottom:1px solid rgba(184,115,51,.12);padding:.38rem 5%;display:flex;align-items:center;justify-content:space-between;font-size:.58rem;font-weight:500;letter-spacing:.06em;position:fixed;top:0;left:0;right:0;z-index:301">
+  <div style="color:var(--idim)">Founded in Twin Cities, MN &nbsp;&#8901;&nbsp; Serving Organizations Nationwide</div>
+  <div style="display:flex;align-items:center;gap:1.2rem">
+    <a href="mailto:info@shevada-solutions.com" style="color:var(--idim);text-decoration:none">&#9993; info@shevada-solutions.com</a>
+    <a href="tel:+16514250875" style="color:var(--copper);text-decoration:none;font-weight:600">&#128222; (651) 425-0875</a>
+  </div>
+</div>
 <nav>
   <a href="index.html" class="nav-logo">
     <div class="nav-logo-name">SheVada <span>Solutions</span></div>
-    <div class="nav-logo-tag">Healthcare Operations &amp; Systems Consulting</div>
+    <div class="nav-logo-tag">RN-Led Operations &amp; Executive Administrative Consulting</div>
   </a>
   <ul class="nav-links">
     <li><a href="index.html" >Home</a></li>
@@ -159,12 +167,13 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
     <li><a href="index.html#free-resources">Resources</a></li>
     <li><a href="index.html#about">About</a></li>
   </ul>
-  <a href="https://calendly.com/shevada-solutions/15min" target="_blank" class="nav-cta"><span class="nav-cta-long">Book Your Free 15-Minute Review</span><span class="nav-cta-short">Book Free Call</span></a>
+  <a href="https://calendly.com/shevada-solutions-info/complimentary-15-minute-operations-review" target="_blank" class="nav-cta"><span class="nav-cta-long">Book Your Free 15-Minute Review</span><span class="nav-cta-short">Book Free Call</span></a>
 </nav><div class="trust-bar"><div class="tbar-in">
   <div class="tbar-item"><span class="tbar-ck">&#10003;</span> RN-Led Consulting</div>
   <div class="tbar-item"><span class="tbar-ck">&#10003;</span> Healthcare Operations Expertise</div>
   <div class="tbar-item"><span class="tbar-ck">&#10003;</span> SOP Development</div>
   <div class="tbar-item"><span class="tbar-ck">&#10003;</span> Workflow Optimization</div>
+  <div class="tbar-item"><span class="tbar-ck">&#10003;</span> HIPAA-Compliant Systems</div>
   <div class="tbar-item"><span class="tbar-ck">&#10003;</span> Nationwide Support</div>
 </div></div>
 <div class="page-hero">
@@ -175,12 +184,12 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
   <p class="page-hero-desc">Assisted living facilities and memory care communities operate at the intersection of clinical care, regulatory compliance, and hospitality. The operational demands are significant — and the consequences of inconsistent processes, underdocumented workflows, and undertrained staff are significant too. <strong>SheVada Solutions brings RN-level operational expertise to the administrative and systems challenges your facility faces.</strong></p>
   <div class="page-hero-checks">
     <div class="phc"><span class="phc-ico">&#10003;</span>Compliance-aware documentation systems built by an active Registered Nurse</div>
-    <div class="phc"><span class="phc-ico">&#10003;</span>SOP library covering intake, resident care coordination, incident reporting, and escalation</div>
+    <div class="phc"><span class="phc-ico">&#10003;</span>SOP library covering intake, resident care coordination, 72-hour maltreatment reporting and incident documentation protocols, and escalation</div>
     <div class="phc"><span class="phc-ico">&#10003;</span>Staff onboarding frameworks that reduce training time and improve consistency</div>
     <div class="phc"><span class="phc-ico">&#10003;</span>Audit-ready operational processes across all critical facility workflows</div>
   </div>
   <div class="page-hero-ctas">
-    <a href="https://calendly.com/shevada-solutions/15min" target="_blank" class="btn-gold">Book Your Complimentary 15-Minute Review</a>
+    <a href="https://calendly.com/shevada-solutions-info/complimentary-15-minute-operations-review" target="_blank" class="btn-gold">Book Your Complimentary 15-Minute Review</a>
     <a href="results.html" class="btn-out">See Client Results</a>
   </div>
 </div>
@@ -190,10 +199,10 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
   <h2 class="sec-h">Where ALFs and Memory Care Communities <em>Struggle Operationally</em></h2>
   <div class="div"></div>
   <div class="prob-grid">
-    <div class="prob-card"><div class="prob-icon">&#9888;</div><div class="prob-title">Inconsistent Care Coordination</div><p class="prob-desc">Shift changes, resident status updates, and care plan communications happen verbally or through informal channels — creating gaps in continuity that increase risk and reduce care quality.</p></div>
+    <div class="prob-card"><div class="prob-icon">&#9888;</div><div class="prob-title">Inconsistent Care Coordination</div><p class="prob-desc">Shift changes, resident status updates, and individualized service plan (ISP) and care plan coordination communications happen verbally or through informal channels — creating gaps in continuity that increase risk and reduce care quality.</p></div>
     <div class="prob-card"><div class="prob-icon">&#9888;</div><div class="prob-title">Underdocumented Workflows</div><p class="prob-desc">Critical processes — move-in procedures, incident reporting, medication management communication, family notification — exist in people's heads rather than written, auditable documentation.</p></div>
     <div class="prob-card"><div class="prob-icon">&#9888;</div><div class="prob-title">Staff Turnover Amplification</div><p class="prob-desc">When there are no written SOPs, every staff departure takes institutional knowledge with it. Onboarding new staff from scratch every time creates inconsistency and risk that compounds with each hire.</p></div>
-    <div class="prob-card"><div class="prob-icon">&#9888;</div><div class="prob-title">State Survey Readiness Gaps</div><p class="prob-desc">Without standardized, documented processes, facilities approach state surveys reactively. Compliance deficiencies often trace back to documentation practices and process inconsistencies rather than care quality issues.</p></div>
+    <div class="prob-card"><div class="prob-icon">&#9888;</div><div class="prob-title">State Survey Readiness Gaps</div><p class="prob-desc">Without standardized, documented processes, facilities approach Minnesota Department of Health (MDH) state surveys reactively. Compliance deficiencies often trace back to documentation practices and process inconsistencies rather than care quality issues.</p></div>
   </div>
 </section>
 
@@ -253,7 +262,7 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
   <p>Start with a complimentary 15-minute operations review. We identify your top bottleneck, share quick wins, and discuss whether SheVada Solutions is the right fit.</p>
   <div class="scar"><div class="scar-ic">&#9673;</div><div><div class="scar-t">Complimentary Reviews Are Limited Each Month</div><div class="scar-s">Availability is reserved for organizations actively seeking operational improvements.</div></div></div>
   <div style="display:flex;gap:.85rem;flex-wrap:wrap;justify-content:center;margin-top:1.4rem">
-    <a href="https://calendly.com/shevada-solutions/15min" target="_blank" class="btn-gold">Book Your Complimentary 15-Minute Review</a>
+    <a href="https://calendly.com/shevada-solutions-info/complimentary-15-minute-operations-review" target="_blank" class="btn-gold">Book Your Complimentary 15-Minute Review</a>
     <a href="index.html#free-resources" class="btn-out">Download Free Resources</a>
   </div>
 </section>
@@ -265,14 +274,14 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
   <div style="display:flex;gap:.85rem;flex-wrap:wrap">
     <a href="results.html" class="btn-out">See Client Results</a>
     <a href="index.html#free-resources" class="btn-out">Free Resources</a>
-    <a href="https://calendly.com/shevada-solutions/15min" target="_blank" class="btn-gold">Book Your Free 15-Minute Review</a>
+    <a href="https://calendly.com/shevada-solutions-info/complimentary-15-minute-operations-review" target="_blank" class="btn-gold">Book Your Free 15-Minute Review</a>
   </div>
 </section>
 <footer>
   <div>
     <div class="ft-bn">SheVada <span>Solutions</span> LLC</div>
     <div class="ft-tag">Healthcare Operations &amp; Systems Consulting</div>
-    <div style="margin-top:.85rem"><a href="https://calendly.com/shevada-solutions/15min" target="_blank" class="btn-gold" style="font-size:.58rem;padding:.42rem .95rem;display:inline-block">Book Your Free 15-Minute Review</a></div>
+    <div style="margin-top:.85rem"><a href="https://calendly.com/shevada-solutions-info/complimentary-15-minute-operations-review" target="_blank" class="btn-gold" style="font-size:.58rem;padding:.42rem .95rem;display:inline-block">Book Your Free 15-Minute Review</a></div>
   </div>
   <ul class="ft-links">
     <li><a href="index.html">Home</a></li>
@@ -290,8 +299,17 @@ footer{background:#0d0d0d;padding:2.4rem 5%;display:flex;align-items:center;just
   </ul>
   <div class="ft-r">
     <a href="https://www.linkedin.com/in/shevada-tools" target="_blank" class="ft-li">&#128100; LinkedIn &#8599;</a>
-    <div style="font-size:.61rem;color:var(--idim);margin-bottom:.26rem"><a href="mailto:shevada@shevada-solutions.com" style="color:var(--copper);text-decoration:none">shevada@shevada-solutions.com</a></div>
-    <div class="ft-copy">&#169; 2025 SheVada Solutions LLC &#8901; All rights reserved</div>
+    <div style="font-size:.61rem;color:var(--idim);margin-bottom:.26rem"><a href="mailto:info@shevada-solutions.com" style="color:var(--copper);text-decoration:none">info@shevada-solutions.com</a></div>
+    <div style="font-size:.61rem;color:var(--copper);font-weight:600;margin-bottom:.3rem"><a href="tel:+16514250875" style="color:var(--copper);text-decoration:none">&#128222; (651) 425-0875</a></div>
+  <div class="ft-copy">&#169; 2025 SheVada Solutions LLC &#8901; All rights reserved</div>
+    <div style="font-size:.52rem;color:rgba(217,208,188,.2);margin-top:.5rem;max-width:600px;line-height:1.6">SheVada Solutions LLC provides operational and systems consulting services. We are not a covered entity under HIPAA and do not provide legal, medical, or compliance advice. All clinical triage support is provided by licensed RN personnel. Organizations are responsible for their own regulatory compliance.</div>
   </div>
 </footer>
+<!-- FLOATING MOBILE BUTTONS -->
+<div style="display:none;position:fixed;bottom:1.2rem;left:0;right:0;z-index:498;padding:0 1rem;gap:.6rem;justify-content:center" class="mob-float-bar">
+  <a href="tel:+16514250875" style="flex:1;max-width:160px;background:var(--copper);color:var(--charcoal);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.7rem .5rem;text-align:center;text-decoration:none">&#128222; Call Now</a>
+  <a href="https://calendly.com/shevada-solutions-info/complimentary-15-minute-operations-review" target="_blank" style="flex:1;max-width:200px;background:var(--gold);color:var(--charcoal);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.7rem .5rem;text-align:center;text-decoration:none">Book Consultation</a>
+</div>
+<style>@media(max-width:768px){.mob-float-bar{display:flex!important}}</style>
+
 </body></html>
